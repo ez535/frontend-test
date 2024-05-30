@@ -89,17 +89,39 @@ nav {
     color: var(--grey-light);
 }
 
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
 .form .btn {
     border: none;
     background-color: unset;
 
     position: absolute;
     top: 21%;
+    left: 33%;
+}
+
+.form input:focus ~ .btn {
     left: 2%;
 }
 
-form input[type="search"]::-webkit-search-cancel-button {
+.form .close-search {
     cursor: pointer;
+
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: none;
+}
+
+form input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
 }
 
 .form.active {
@@ -128,8 +150,8 @@ form input[type="search"]::-webkit-search-cancel-button {
 }
 
 .form.active .btn {
-    top: 45%;
-    left: 3%;
+    top: 44%;
+    left: 33%;
 }
 
 .delete {
@@ -630,11 +652,23 @@ main .container {
     .form {
         width: 350px;
     }
+
+    .form .btn {
+        left: 29%;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .form {
         width: 250px;
+    }
+
+    .form .btn {
+        left: calc(100% - 79%);
+    }
+
+    .form input:focus ~ .btn {
+        left: 3%;
     }
 }
 
@@ -699,11 +733,44 @@ main .container {
     .movie svg {
         height: 20px;
     }
+
+    .form .close-search {
+        bottom: 8px;
+        left: calc(100% - 160px);
+    }
+
+    .form input:focus ~ .btn {
+        left: 3%;
+    }
+
+    .form.active .btn {
+        left: calc((100% - (32px + 67px)) - 54%);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .form.active .btn {
+        left: calc((100% - (32px + 67px)) - 52%);
+    }
+
+    .form .close-search {
+        left: calc(100% - 140px);
+    }
 }
 
 @media screen and (max-width: 650px) {
     .m-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form input:focus ~ .btn {
+        left: 4%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form.active .btn {
+        left: calc((100% - (32px + 67px)) - 53%);
     }
 }
 
@@ -722,7 +789,17 @@ main .container {
     }
 
     .form.active .btn {
-        top: 34%;
+        top: 33%;
+    }
+
+    .form .close-search {
+        bottom: 12px;
+        left: calc(100% - 130px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form input:focus ~ .btn {
         left: 5%;
     }
 }
@@ -748,10 +825,20 @@ main .container {
     .movie__footer {
         padding: 16px;
     }
+
+    .form.active .btn {
+        left: calc((100% - (32px + 67px)) - 54%);
+    }
 }
 
-@media screen and (max-width: 425px) {
-    .form.active .btn {
+@media screen and (max-width: 375px) {
+    .form input:focus ~ .btn {
+        left: 6%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form input:focus ~ .btn {
         left: 7%;
     }
 }

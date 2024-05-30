@@ -32,6 +32,11 @@ a:hover span {
     color: var(--white);
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 .container {
     max-width: var(--container-width);
 
@@ -73,4 +78,8 @@ h3 {
     svg {
         height: 24px;
     }
+}
+
+.none {
+    display: none;
 }
