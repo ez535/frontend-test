@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="burger">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#burger"></use>
+                </svg>
+            </div>
+            <div class="logo">
+                <a href="/" class="logo__link">
+                    <img src="./images/logo.jpg" alt="Logo">
+                </a>
+            </div>
+    
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span>Главная</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu__item active">
+                        <a href="#" class="menu__link">
+                            <span>Фильмы</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span>Сериалы</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="add">
+                <form action="" method="get" class="form">
+                    <button class="btn" type="submit">
+                        <svg>
+                            <use xlink:href="images/icons/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+    
+                    <input name="search" placeholder="Поиск по сайту" type="search" class="input">
+
+                    <button class="delete" type="button">Очистить</button>
+                </form>
+    
+                <div class="bookmark">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#bookmark"></use>
+                    </svg>
+                </div>
+
+                <div class="acc">
+                    <div class="avatar">
+                        <img src="./images/ava.jpg" alt="Avatar">
+                    </div>
+        
+                    <div class="arr">
+                        <svg>
+                            <use xlink:href="images/icons/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#home"></use>
+                    </svg>
+
+                    <span class="menu-mobile__text">Главная</span>
+                </a>
+            </li>
+            
+            <li class="menu-mobile__item active">
+                <a href="#" class="menu-mobile__link">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#films"></use>
+                    </svg>
+
+                    <span class="menu-mobile__text">Фильмы</span>
+                </a>
+            </li>
+            
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#serials"></use>
+                    </svg>
+
+                    <span class="menu-mobile__text">Сериалы</span>
+                </a>
+            </li>
+            
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link btn-search">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#search-mob"></use>
+                    </svg>
+
+                    <span class="menu-mobile__text">Поиск</span>
+                </a>
+            </li>
+            
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#bookmark"></use>
+                    </svg>
+
+                    <span class="menu-mobile__text">Избранное</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    
+    <main class="height">
+        <div class="container">
+            <section class="section section_p">
+                <h2 class="heading">Популярные</h2>
+    
+                <ul class="m-list pop"></ul>
+            </section>
+
+            <section class="section section_v">
+                <h2 class="heading">Недавно просмотренные</h2>
+    
+                <ul class="m-list static"></ul>
+            </section>
+        </div>
+    </main>
+
+    
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>

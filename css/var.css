@@ -1,0 +1,14 @@
+:root {
+	--container-width: 1360px;
+
+	--font-main: 'montserrat-light', sans-serif;
+	--font-medium: 'montserrat-medium', sans-serif;
+    --font-semibold: 'montserrat-semibold', sans-serif;
+
+    --white: #FFFFFF;
+    --gray: #737373;
+    --grey-light: #E6E6E6;
+    --black-dark: #090808;
+    --black-light: #161615;
+    --red: #D22F26;
+}

@@ -1,0 +1,103 @@
+@import url(./var.css);
+
+@font-face {
+    font-family: 'montserrat-light';
+    src: local('montserrat-light'),
+        url('/fonts/montserrat-light.ttf') format('ttf'),
+        url('/fonts/montserrat-light.woff2') format('woff'), 
+        url('/fonts/montserrat-light.woff') format('woff2'),
+         
+}
+
+@font-face {
+    font-family: 'montserrat-medium';
+    src: local('montserrat-medium'),
+        url('/fonts/montserrat-medium.ttf') format('ttf'),
+        url('/fonts/montserrat-medium.woff2') format('woff'), 
+        url('/fonts/montserrat-medium.woff') format('woff2'),
+         
+}
+
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: local('montserrat-semibold'),
+        url('/fonts/montserrat-semibold.ttf') format('ttf'),
+        url('/fonts/montserrat-semibold.woff2') format('woff'), 
+        url('/fonts/montserrat-semibold.woff') format('woff2'),
+         
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-light);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: unset;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+a span {
+    color: var(--gray);
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--font-main);
+}
+
+a:hover span {
+    color: var(--white);
+}
+
+.container {
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+}
+
+svg {
+    width: 24px;
+    height: 20px;
+}
+
+h2 {
+    font-family: var(--font-medium);
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--grey-light);
+}
+
+@media (max-width: 425px) {
+    h2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+h2::first-letter,
+h3::first-letter {
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--font-semibold);
+    font-size: 32px;
+    line-height: 45px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    svg {
+        height: 24px;
+    }
+}
