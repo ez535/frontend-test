@@ -1,6 +1,8 @@
 import createFullofMovie from "./createFullofMovie.js";
+import sortMovies from "../js/const.js";
 
 export default function createElementStatic(movies) {
+    sortMovies(movies);
     const base = document.querySelector('.static');
     const mItem = document.createElement('li');
     mItem.classList.add('m-item');

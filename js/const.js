@@ -12,3 +12,7 @@ export const headingChange = document.querySelector('.heading');
 export const btnSearch = document.querySelector('.btn-search');
 export const inputSearch = document.querySelector('.input');
 export const btnDelete = document.querySelector('.delete');
+
+export default function sortMovies(arr) {
+    return arr.sort((a, b) => b.Year - a.Year);
+}

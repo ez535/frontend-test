@@ -1,7 +1,8 @@
 import createFullofMovie from "./createFullofMovie.js";
+import sortMovies from "../js/const.js";
 
 export default function createElementMovie(movies) {
-    movies.sort((a, b) => b.Year - a.Year);
+    sortMovies(movies);
     const pop = document.querySelector('.pop');
     pop.textContent = '';
     const mItem = document.createElement('li');
