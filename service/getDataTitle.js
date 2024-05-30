@@ -3,7 +3,7 @@ import getExtendedData from './getExtended.js';
 
 export default async function getDataTitle(title) {
   try {
-    const response = await fetch(`http://www.omdbapi.com/?s=${title}&plot=full&apikey=${API_KEY}`);
+    const response = await fetch(`https://www.omdbapi.com/?s=${title}&plot=full&apikey=${API_KEY}`);
     console.log(response);
     if (!response.ok) {
       throw new Error('Ошибка при выполнении запроса: ' + response.statusText);
